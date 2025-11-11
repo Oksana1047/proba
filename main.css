@@ -246,6 +246,7 @@ footer h3 {
    .about {
        flex-direction: column-reverse;
        padding: 50px 10px;
+       position: relative;
    }
  
    .about h1 {
@@ -472,4 +473,10 @@ font-size: 48px;
 .promo__text button i {
   font-size: 15px;
   margin-left: 5px;
+}
+.orb-canvas {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
 }
