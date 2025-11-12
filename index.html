@@ -13,8 +13,8 @@ integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEB
     <header>
         <img class="header__logo" src='img/logo.svg'>
         <div class="header__controls">
-      <a href="#contacts">Контакты</a>
-      <button>Заказать</button>
+      <a href="#form">Контакты</a>
+      <button type="button">Заказать</button>
     </div>
     </header>
   <section class="about">
@@ -22,14 +22,14 @@ integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEB
   <div class="about__info animate__animated animate__fadeInLeft animate__slow">
     <h1>Солнечные панели GreenRobotic</h1>
     <p>Производите дешевую экологически чистую электроэнергию из солнечного света</p>
-    <button>Узнать подробнее<i class="fas fa-angle-right"></i></button>
+    <button class="more-button" href="#features">Узнать подробнее<i class="fas fa-angle-right"></i></button>
   </div>
   <div class="about__images animate__animated animate__fadeInRight animate__slow">
     <img class="about__sun-image" src="img/sun.png">
     <img class="about__image" src="img/solar-panel.png">
   </div>
 </section>
-<section class="form">
+<section class="form" id="form">
   <div class="form_container">
     <h1>Оставьте свои контакты</h1>
     <p>Поможем подобрать модель. 
@@ -44,17 +44,23 @@ integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEB
           <br>
           <label for="name">Номер телефона</label>
           <input type="text" placeholder="7(999)999-99-99" id="phone">
+        </div>
           <br>
-          <label for="name">Примерный бюджет</label>
+          <div class="form__group">
+          <label for="budget">Примерный бюджет</label>
           
           <select id="budget">
             <option> Выберите вариант</option>
             <option value="10-30">10000₽-30000₽</option>
             <option value="30-60">30000₽-60000₽</option>
             <option value="60-100">60000₽-100000₽</option>
-            <option value="100+">100000₽</option>
+            <option value="other">Другое</option>
+            
           </select>
-        </div> 
+          </div>
+        <div class="form__group form__other-input">
+  <input type="text" placeholder="Введите ваш вариант">
+</div>
         <button class="form__submit" type="submit">Отправить заявку</button>
       </form>
   </div>
